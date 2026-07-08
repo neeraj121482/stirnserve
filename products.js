@@ -166,7 +166,7 @@ window.SNS_PRODUCTS = [
     taste: "Tangy, spicy, traditional",
     bestWith: "Paratha, dal chawal, poori, Indian thali",
     storage: "Use a dry spoon. Keep jar tightly closed and store in a cool, dry place.",
-    image: "assets/products/lehsuwa-ka-achar.jpg",
+    image: "assets/products/lehsuwa-ka-achar.png",
     sizes: [
       { label: "250 gm", wasPrice: 190, nowPrice: 190, paymentLink: "" },
       { label: "500 gm", wasPrice: 365, nowPrice: 365, paymentLink: "" }
