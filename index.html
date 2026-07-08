@@ -4,194 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stir n Serve | Homemade Snacks, Sweets & Pickles</title>
-  <meta name="description" content="Homemade Indian snacks, sweets, pickles and gift hampers by Stir n Serve." />
+  <meta name="description" content="Premium homemade Indian snacks, sweets, pickles and hampers by Stir n Serve." />
+  <link rel="icon" href="assets/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="topbar">Fresh homemade snacks, sweets & pickles — Call / WhatsApp: <span data-phone>8130275252 / 9314482717</span></div>
-
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="index.html">
-        <img class="logo-img" data-logo src="assets/sns-logo.png" alt="Stir n Serve logo">
-        <span>Stir n Serve</span>
-      </a>
-      <nav class="menu" id="menu">
-        <a href="shop.html">Shop</a>
-        <a href="savory.html">Savory</a>
-        <a href="sweets.html">Sweets</a>
-        <a href="pickles.html">Pickles</a>
-        <a href="hampers.html">Hampers</a>
-        <a href="story.html">Our Story</a>
-        <a href="videos.html">Videos</a>
-        <a href="fssai.html">FSSAI</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="actions">
-        <button class="btn outline" onclick="openCart()">Cart <span data-cart-count>0</span></button>
-        <button class="btn primary" onclick="openWhatsApp('Hi Stir n Serve, I want to place an order.')">WhatsApp</button>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-      </div>
+      <a class="brand" href="index.html"><img class="logo-img" src="assets/sns-logo.png" alt="Stir n Serve logo"><span>Stir n Serve</span></a>
+      <nav class="menu" id="menu"><a class="" href="shop.html">Shop</a><a class="" href="savory.html">Savory</a><a class="" href="sweets.html">Sweets</a><a class="" href="pickles.html">Pickles</a><a class="" href="hampers.html">Hampers</a><a class="" href="story.html">Our Story</a><a class="" href="our-promise.html">Our Promise</a><a class="" href="contact.html">Contact</a></nav>
+      <div class="actions"><button class="btn outline" onclick="openCart()">Cart <span data-cart-count>0</span></button><button class="btn primary" onclick="openWhatsApp('Hi Stir n Serve, I want to place an order.')">WhatsApp</button><button class="hamburger" onclick="toggleMenu()">☰</button></div>
     </div>
   </header>
-
   <main>
 
     <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Crafted for Cravings</span>
-          <h1>Traditional Indian snacks, sweets & pickles <span>made in small batches</span></h1>
-          <p>Stir n Serve brings back the taste of home — handmade snacks, pickles, sweets and gifting hampers from Santosh ji’s kitchen with Neeraj’s modern brand vision.</p>
-          <div class="hero-buttons">
-            <a href="shop.html" class="btn primary">Shop Products</a>
-            <button class="btn secondary" onclick="openWhatsApp('Hi Stir n Serve, I want to place an order. Please share availability and delivery details.')">Order on WhatsApp</button>
-          </div>
-          <div class="trust">
-            <span class="pill">Mother-in-law & son-in-law founded</span>
-            <span class="pill">Small batches</span>
-            <span class="pill">Gift hampers</span>
-            <span class="pill">Food Destination</span>
-          </div>
-        </div>
-        <div class="hero-card">
-          <img src="assets/product-menu.jpeg" alt="Stir n Serve product menu">
-        </div>
+        <div class="reveal"><span class="eyebrow">Crafted for Cravings</span><h1>Traditional Indian snacks, pickles & sweets <span>made to be remembered</span></h1><p>Stir n Serve brings the warmth of home into jars, boxes and hampers — small-batch snacks, sweets and pickles built on trusted family recipes.</p><div class="hero-buttons"><a class="btn primary" href="shop.html">Shop Products</a><button class="btn secondary" onclick="openWhatsApp('Hi Stir n Serve, I want to place an order. Please share availability and delivery details.')">Order on WhatsApp</button><a class="btn outline" href="story.html">Our Story</a></div><div class="trust"><span class="pill">Santosh ji’s recipes</span><span class="pill">Neeraj’s brand vision</span><span class="pill">Food Destination</span><span class="pill">Small batches</span></div></div>
+        <div class="hero-visual reveal"><img src="assets/hero-collage.jpg" alt="Stir n Serve snacks sweets and pickles"></div>
       </div>
     </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Shop by Category</h2>
-          <p>Separate pages for savoury snacks, sweets, pickles and hampers.</p>
-        </div>
-        <div class="grid categories">
-          <a class="cat" href="savory.html"><h3>Savory</h3><p>Namak Para, Sada Mathri, Methi Mathri and Lehsuni Bites.</p><span class="btn outline small">View Savory</span></a>
-          <a class="cat" href="sweets.html"><h3>Sweets</h3><p>Sakar Para, Besan Kesar Ladoo and Atta Dryfruit Ladoo.</p><span class="btn outline small">View Sweets</span></a>
-          <a class="cat" href="pickles.html"><h3>Pickles</h3><p>Lehsuwa ka Achar and Ker ka Achar.</p><span class="btn outline small">View Pickles</span></a>
-          <a class="cat" href="hampers.html"><h3>Gift Hampers</h3><p>Custom boxes for festivals, corporates and return gifts.</p><span class="btn outline small">Explore Hampers</span></a>
-        </div>
-      </div>
+    <section class="section slim">
+      <div class="container"><div class="grid categories stagger"><a class="cat savory" href="savory.html"><h3>Savory</h3><p>Namak Para, Sada Mathri, Methi Mathri and Lehsuni Bites.</p><span class="btn outline small">View Savory</span></a><a class="cat sweets" href="sweets.html"><h3>Sweets</h3><p>Sakar Para, Besan Kesar Ladoo and Atta Dryfruit Ladoo.</p><span class="btn outline small">View Sweets</span></a><a class="cat pickles" href="pickles.html"><h3>Pickles</h3><p>Lehsuwa ka Achar and Ker ka Achar.</p><span class="btn outline small">View Pickles</span></a><a class="cat hampers" href="hampers.html"><h3>Hampers</h3><p>Festive, corporate, return gift and custom hampers.</p><span class="btn outline small">Explore</span></a></div></div>
     </section>
-
     <section class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Featured Products</h2>
-          <p>Products show was price, now price and automatic discount percentage from products.js.</p>
-        </div>
-        <div class="grid product-grid" id="featuredProducts"></div>
-      </div>
+      <div class="container"><div class="section-head"><span class="eyebrow">Shop Favourites</span><h2>Fresh from the Stir n Serve kitchen</h2><p>Each product page has sizes, was/now pricing, auto discount percentage, WhatsApp order and payment-link support.</p></div><div class="grid product-grid stagger" data-products data-limit="6"></div></div>
     </section>
-
     <section class="section">
-      <div class="container story-grid">
-        <div class="story-img"><img data-logo src="assets/sns-logo.png" alt="Stir n Serve logo"></div>
-        <div class="story-content">
-          <span class="eyebrow">Our Story</span>
-          <h2>Santosh ji brings the recipes. Neeraj brings the vision.</h2>
-          <p>Stir n Serve began with a simple belief — the best food is not just made, it is remembered.</p>
-          <p>Founded by Santosh Khandelwal and Neeraj Khandelwal, Stir n Serve is a rare mother-in-law and son-in-law partnership built on tradition, trust and authentic Indian taste.</p>
-          <a class="btn primary" href="story.html">Read Full Story</a>
-        </div>
-      </div>
+      <div class="container story-grid"><div class="story-img reveal"><img src="assets/sns-logo.png" alt="Stir n Serve logo"></div><div class="story-content reveal"><span class="eyebrow">Our Story</span><h2>Santosh ji brings the recipes. Neeraj brings the vision.</h2><p>Stir n Serve began with a simple belief — the best food is not just made, it is remembered.</p><p>A rare mother-in-law and son-in-law partnership built on tradition, trust and authentic Indian taste.</p><a class="btn primary" href="story.html">Read Full Story</a></div></div>
     </section>
-
     <section class="section dark">
-      <div class="container">
-        <div class="section-head">
-          <h2>Build Your Own Hamper</h2>
-          <p>Useful for festivals, corporate gifting, return gifts, exhibitions and family events.</p>
-        </div>
-        <div class="grid hamper-grid">
-          <div class="hamper"><h3>Mini Hamper</h3><p>Choose 3 items.</p><button class="btn light" onclick="openWhatsApp('Hi Stir n Serve, I want a Mini Hamper with 3 items.')">Enquire</button></div>
-          <div class="hamper"><h3>Family Hamper</h3><p>Choose 5 items.</p><button class="btn light" onclick="openWhatsApp('Hi Stir n Serve, I want a Family Hamper with 5 items.')">Enquire</button></div>
-          <div class="hamper"><h3>Premium Hamper</h3><p>Choose 7 items.</p><button class="btn light" onclick="openWhatsApp('Hi Stir n Serve, I want a Premium Hamper with 7 items.')">Enquire</button></div>
-          <div class="hamper"><h3>Corporate Hamper</h3><p>Custom quantity and budget.</p><button class="btn light" onclick="openWhatsApp('Hi Stir n Serve, I want corporate gifting hampers.')">Enquire</button></div>
-        </div>
-      </div>
+      <div class="container"><div class="section-head"><span class="eyebrow">Watch & Follow</span><h2>Videos and reels</h2><p>No separate video page — keep short reels on the homepage only. Add Instagram links or MP4 links in products.js.</p></div><div class="grid reel-strip stagger" id="homeReels"></div></div>
     </section>
-
-    <section class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Videos, Reels & Social</h2>
-          <p>Add Instagram reels, product making videos, packing videos and customer review clips.</p>
-        </div>
-        <div class="grid video-grid" id="videoGrid"></div>
-        <div class="section-head" style="margin-top:30px">
-          <a class="btn primary" href="videos.html">View Video Page</a>
-        </div>
-      </div>
+    <section class="section">
+      <div class="container"><div class="grid promise-grid stagger"><div class="promise-card"><h3>Small Batch</h3><p>Prepared with attention, not mass-production shortcuts.</p></div><div class="promise-card"><h3>Real Taste</h3><p>Flavours rooted in family recipes, festivals and Indian kitchens.</p></div><div class="promise-card"><h3>Easy Orders</h3><p>Order online via payment links or confirm directly through WhatsApp.</p></div></div></div>
     </section>
-
   </main>
-
   <footer class="footer">
     <div class="container footer-grid">
-      <div>
-        <img class="logo-img" data-logo src="assets/sns-logo.png" alt="Stir n Serve logo">
-        <h3>Stir n Serve</h3>
-        <p>Homemade snacks, sweets, pickles and curated hampers.</p>
-        <p><strong>Address:</strong> <span data-address>Food Destination</span></p>
-        <p><strong>To book orders:</strong> <span data-phone>8130275252 / 9314482717</span></p>
-        <p><strong>FSSAI:</strong> <span data-fssai>Add FSSAI License / Registration No.</span></p>
-      </div>
-      <div>
-        <h4>Shop</h4>
-        <a href="shop.html">Shop All</a>
-        <a href="savory.html">Savory</a>
-        <a href="sweets.html">Sweets</a>
-        <a href="pickles.html">Pickles</a>
-      </div>
-      <div>
-        <h4>Orders</h4>
-        <a href="hampers.html">Gift Hampers</a>
-        <a href="contact.html">Bulk Orders</a>
-        <a href="payment.html">Online Payment</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div>
-        <h4>Brand</h4>
-        <a href="story.html">Our Story</a>
-        <a href="videos.html">Videos & Reels</a>
-        <a href="fssai.html">FSSAI</a>
-        <a href="hampers.html">Corporate Gifting</a>
-      </div>
-      <div>
-        <h4>Follow</h4>
-        <a data-instagram target="_blank" href="#">Instagram</a>
-        <a data-pinterest target="_blank" href="#">Pinterest</a>
-        <a data-facebook target="_blank" href="#">Facebook</a>
-        <a data-youtube target="_blank" href="#">YouTube</a>
-      </div>
+      <div><img class="logo-img" src="assets/sns-logo.png" alt="Stir n Serve logo"><h3>Stir n Serve</h3><p>Homemade snacks, sweets, pickles and curated hampers.</p><p><strong>Address:</strong> <span data-address>Food Destination</span></p><p><strong>Orders:</strong> <span data-phone>8130275252 / 9314482717</span></p><p><strong>FSSAI:</strong> <span data-fssai>Add FSSAI License / Registration No.</span></p></div>
+      <div><h4>Shop</h4><a href="shop.html">Shop All</a><a href="savory.html">Savory</a><a href="sweets.html">Sweets</a><a href="pickles.html">Pickles</a></div>
+      <div><h4>Orders</h4><a href="hampers.html">Gift Hampers</a><a href="payment.html">Online Payment</a><a href="contact.html">Bulk Orders</a><a href="contact.html">Contact</a></div>
+      <div><h4>Brand</h4><a href="story.html">Our Story</a><a href="our-promise.html">Our Promise</a><a href="hampers.html">Corporate Gifting</a></div>
+      <div><h4>Follow</h4><a data-instagram target="_blank" href="#">Instagram</a><a data-pinterest target="_blank" href="#">Pinterest</a><a data-facebook target="_blank" href="#">Facebook</a><a data-youtube target="_blank" href="#">YouTube</a></div>
     </div>
     <div class="container copy">© Stir n Serve. Crafted for Cravings.</div>
   </footer>
-
-  <a class="floating-wa" target="_blank" href="https://wa.me/918130275252?text=Hi%20Stir%20n%20Serve%2C%20I%20want%20to%20place%20an%20order.">☎</a>
-
+  <a class="floating-wa" target="_blank" href="#">☎</a>
   <div class="overlay" id="overlay" onclick="closeCart()"></div>
-  <aside class="cart-drawer" id="cartDrawer">
-    <div class="cart-head">
-      <h3>Your Cart</h3>
-      <button class="close" onclick="closeCart()">×</button>
-    </div>
-    <div class="cart-items" id="cartItems"></div>
-    <div class="cart-foot">
-      <div class="discount">
-        <input id="discountCode" placeholder="Discount code">
-        <button class="btn outline small" onclick="applyDiscount()">Apply</button>
-      </div>
-      <div class="cart-total"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
-      <div class="cart-total"><span>Discount</span><span id="cartDiscount">₹0</span></div>
-      <div class="cart-total"><span>Total</span><span id="cartTotal">₹0</span></div>
-      <button class="btn primary" onclick="cartWhatsApp()">Confirm on WhatsApp</button>
-      <button class="btn outline" onclick="clearCart()">Clear Cart</button>
-    </div>
-  </aside>
-
+  <aside class="cart-drawer" id="cartDrawer"><div class="cart-head"><h3>Your Cart</h3><button class="close" onclick="closeCart()">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-foot"><div class="discount"><input id="discountCode" placeholder="Discount code"><button class="btn outline small" onclick="applyDiscount()">Apply</button></div><div class="cart-total"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div><div class="cart-total"><span>Discount</span><span id="cartDiscount">₹0</span></div><div class="cart-total"><span>Total</span><span id="cartTotal">₹0</span></div><button class="btn primary" onclick="cartWhatsApp()">Confirm on WhatsApp</button><button class="btn outline" onclick="clearCart()">Clear Cart</button></div></aside>
   <script>window.SNS_BASE = "";</script>
   <script src="products.js"></script>
   <script src="script.js"></script>
