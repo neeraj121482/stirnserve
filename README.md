@@ -1,36 +1,54 @@
-# Stir n Serve GitHub Pages Website - Version 2
+# Stir n Serve Static Website V4
 
-This is the leaner premium version.
-
-## What changed
-- No Gallery page.
-- No separate Videos/Reels page. Reels are only on the homepage.
-- FSSAI page replaced with `our-promise.html`.
-- Product pages are separate files in the `products/` folder.
-- Product pages use sizes, was price, now price and automatic discount percentage.
-- Premium hero images and product images generated from your uploaded menu image.
-- Scroll animations are included using plain JavaScript. No external animation library required.
+This is a GitHub Pages static website for Stir n Serve.
 
 ## Upload to GitHub
-Upload all files and folders in this folder to the root of your GitHub repository.
-Make sure these are visible at the root:
-- index.html
-- shop.html
-- products.js
-- script.js
-- style.css
-- assets/
-- products/
 
-If product pages show 404, the `products/` folder was not uploaded correctly.
+Upload the contents of this folder to your repository root. The root should directly show:
 
-## Edit products
-Open `products.js`.
-Change `wasPrice`, `nowPrice`, sizes, descriptions and payment links.
+- `index.html`
+- `shop.html`
+- `products.js`
+- `style.css`
+- `script.js`
+- `assets/`
+- `products/`
 
-## Online payment
-For a free static website, use Razorpay Payment Links. Paste each link inside the relevant size object in `products.js`.
+Do not upload only the outer folder.
 
-## Custom domain
-To use www.stirnserve.com, add it in GitHub: Settings > Pages > Custom domain.
-Then add DNS CNAME for www pointing to neeraj121482.github.io.
+## How to edit images
+
+Open `IMAGE_INDEX.md`. Every image is numbered and mapped to the exact page/section it controls.
+
+## Main design fix in V4
+
+The page hero images are now full-width under the page title instead of small right-side image cards.
+
+## Product editing
+
+Edit `products.js` for:
+
+- product name
+- sizes
+- was price
+- now price
+- payment links
+- WhatsApp number
+- FSSAI number
+- social links
+
+## Product images
+
+Product images are in:
+
+`assets/04-products/`
+
+The product image paths are in `products.js`.
+
+## Page hero images
+
+Page hero images are in:
+
+`assets/03-page-heroes/`
+
+These are mapped in `IMAGE_INDEX.md`.

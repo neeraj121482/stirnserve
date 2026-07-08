@@ -13,7 +13,6 @@ window.SNS_CONFIG = {
   pinterest: "#",
   facebook: "#",
   youtube: "#",
-  cacheVersion: "20260708b",
   discounts: {
     WELCOME10: { type: "percent", value: 10, label: "Welcome 10% off" },
     SNS5: { type: "percent", value: 5, label: "SNS 5% off" },
@@ -50,7 +49,7 @@ window.SNS_PRODUCTS = [
     taste: "Crispy, savoury, light spice",
     bestWith: "Chai, coffee, travel snacks, office snacking",
     storage: "Store in a cool, dry place. Keep the jar tightly closed after opening.",
-    image: "assets/products/namak-para.jpg",
+    image: "assets/04-products/01-namak-para.jpg",
     sizes: [
       { label: "150 gm", wasPrice: 135, nowPrice: 115, paymentLink: "" },
       { label: "300 gm", wasPrice: 265, nowPrice: 210, paymentLink: "" }
@@ -67,7 +66,7 @@ window.SNS_PRODUCTS = [
     taste: "Mild, crispy, traditional",
     bestWith: "Chai, pickle, family snack plates",
     storage: "Store in a cool, dry place. Keep the jar tightly closed after opening.",
-    image: "assets/products/sada-mathri.jpg",
+    image: "assets/04-products/02-sada-mathri.jpg",
     sizes: [
       { label: "300 gm", wasPrice: 225, nowPrice: 210, paymentLink: "" }
     ]
@@ -83,7 +82,7 @@ window.SNS_PRODUCTS = [
     taste: "Crispy, methi, savoury, aromatic",
     bestWith: "Chai, travel, pickle, festive snack platters",
     storage: "Store in a cool, dry place. Keep the jar tightly closed after opening.",
-    image: "assets/products/methi-mathri.jpg",
+    image: "assets/04-products/03-methi-mathri.jpg",
     sizes: [
       { label: "200 gm", wasPrice: 195, nowPrice: 165, paymentLink: "" },
       { label: "400 gm", wasPrice: 375, nowPrice: 300, paymentLink: "" }
@@ -100,7 +99,7 @@ window.SNS_PRODUCTS = [
     taste: "Garlic, crispy, bold, savoury",
     bestWith: "Chai, get-togethers, travel, snack platters",
     storage: "Store in a cool, dry place. Keep the jar tightly closed after opening.",
-    image: "assets/products/lehsuni-bites.jpg",
+    image: "assets/04-products/04-lehsuni-bites.jpg",
     sizes: [
       { label: "200 gm", wasPrice: 225, nowPrice: 190, paymentLink: "" },
       { label: "400 gm", wasPrice: 435, nowPrice: 340, paymentLink: "" }
@@ -117,7 +116,7 @@ window.SNS_PRODUCTS = [
     taste: "Sweet, crunchy, festive",
     bestWith: "Tea, festive boxes, kids, gifting",
     storage: "Store in a cool, dry place. Keep the jar tightly closed after opening.",
-    image: "assets/products/sakar-para.jpg",
+    image: "assets/04-products/05-sakar-para.jpg",
     sizes: [
       { label: "200 gm", wasPrice: 195, nowPrice: 140, paymentLink: "" },
       { label: "400 gm", wasPrice: 375, nowPrice: 250, paymentLink: "" }
@@ -134,7 +133,7 @@ window.SNS_PRODUCTS = [
     taste: "Sweet, rich, nutty, festive",
     bestWith: "Festivals, gifting, celebrations, family desserts",
     storage: "Store in a cool, dry place. Keep box closed after opening.",
-    image: "assets/products/besan-kesar-ladoo.jpg",
+    image: "assets/04-products/06-besan-kesar-ladoo.jpg",
     sizes: [
       { label: "500 gm", wasPrice: 450, nowPrice: 425, paymentLink: "" }
     ]
@@ -150,7 +149,7 @@ window.SNS_PRODUCTS = [
     taste: "Sweet, rich, traditional, dry fruit",
     bestWith: "Festivals, gifting, family desserts",
     storage: "Store in a cool, dry place. Keep box closed after opening.",
-    image: "assets/products/atta-dryfruit-ladoo.jpg",
+    image: "assets/04-products/07-atta-dryfruit-ladoo.jpg",
     sizes: [
       { label: "500 gm", wasPrice: 495, nowPrice: 450, paymentLink: "" }
     ]
@@ -166,7 +165,7 @@ window.SNS_PRODUCTS = [
     taste: "Tangy, spicy, traditional",
     bestWith: "Paratha, dal chawal, poori, Indian thali",
     storage: "Use a dry spoon. Keep jar tightly closed and store in a cool, dry place.",
-    image: "assets/products/lehsuwa-ka-achar.png",
+    image: "assets/04-products/08-lehsuwa-ka-achar.jpg",
     sizes: [
       { label: "250 gm", wasPrice: 190, nowPrice: 190, paymentLink: "" },
       { label: "500 gm", wasPrice: 365, nowPrice: 365, paymentLink: "" }
@@ -183,7 +182,7 @@ window.SNS_PRODUCTS = [
     taste: "Tangy, spicy, Rajasthani, bold",
     bestWith: "Paratha, khichdi, dal chawal, travel meals",
     storage: "Use a dry spoon. Keep jar tightly closed and store in a cool, dry place.",
-    image: "assets/products/ker-ka-achar.png",
+    image: "assets/04-products/09-ker-ka-achar.png",
     sizes: [
       { label: "250 gm", wasPrice: 390, nowPrice: 390, paymentLink: "" },
       { label: "500 gm", wasPrice: 765, nowPrice: 720, paymentLink: "" }
