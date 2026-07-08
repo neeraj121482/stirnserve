@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homemade Sweets | Stir n Serve</title>
+  <meta name="description" content="Sakar Para, Besan Kesar Ladoo and Atta Dryfruit Ladoo for gifting and family occasions." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">Fresh homemade snacks, sweets & pickles — Call / WhatsApp: <span data-phone>8130275252 / 9314482717</span></div>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="logo-img" data-logo src="assets/sns-logo.png" alt="Stir n Serve logo">
+        <span>Stir n Serve</span>
+      </a>
+      <nav class="menu" id="menu">
+        <a href="shop.html">Shop</a>
+        <a href="savory.html">Savory</a>
+        <a href="sweets.html">Sweets</a>
+        <a href="pickles.html">Pickles</a>
+        <a href="hampers.html">Hampers</a>
+        <a href="story.html">Our Story</a>
+        <a href="videos.html">Videos</a>
+        <a href="fssai.html">FSSAI</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="actions">
+        <button class="btn outline" onclick="openCart()">Cart <span data-cart-count>0</span></button>
+        <button class="btn primary" onclick="openWhatsApp('Hi Stir n Serve, I want to place an order.')">WhatsApp</button>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">Home / Homemade Sweets</div>
+        <h1>Homemade Sweets</h1>
+        <p>Sakar Para, Besan Kesar Ladoo and Atta Dryfruit Ladoo for gifting and family occasions.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="grid product-grid" data-category-grid="Sweets"></div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="logo-img" data-logo src="assets/sns-logo.png" alt="Stir n Serve logo">
+        <h3>Stir n Serve</h3>
+        <p>Homemade snacks, sweets, pickles and curated hampers.</p>
+        <p><strong>Address:</strong> <span data-address>Food Destination</span></p>
+        <p><strong>To book orders:</strong> <span data-phone>8130275252 / 9314482717</span></p>
+        <p><strong>FSSAI:</strong> <span data-fssai>Add FSSAI License / Registration No.</span></p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">Shop All</a>
+        <a href="savory.html">Savory</a>
+        <a href="sweets.html">Sweets</a>
+        <a href="pickles.html">Pickles</a>
+      </div>
+      <div>
+        <h4>Orders</h4>
+        <a href="hampers.html">Gift Hampers</a>
+        <a href="contact.html">Bulk Orders</a>
+        <a href="payment.html">Online Payment</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Brand</h4>
+        <a href="story.html">Our Story</a>
+        <a href="videos.html">Videos & Reels</a>
+        <a href="fssai.html">FSSAI</a>
+        <a href="hampers.html">Corporate Gifting</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a data-instagram target="_blank" href="#">Instagram</a>
+        <a data-pinterest target="_blank" href="#">Pinterest</a>
+        <a data-facebook target="_blank" href="#">Facebook</a>
+        <a data-youtube target="_blank" href="#">YouTube</a>
+      </div>
+    </div>
+    <div class="container copy">© Stir n Serve. Crafted for Cravings.</div>
+  </footer>
+
+  <a class="floating-wa" target="_blank" href="https://wa.me/918130275252?text=Hi%20Stir%20n%20Serve%2C%20I%20want%20to%20place%20an%20order.">☎</a>
+
+  <div class="overlay" id="overlay" onclick="closeCart()"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+      <h3>Your Cart</h3>
+      <button class="close" onclick="closeCart()">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+      <div class="discount">
+        <input id="discountCode" placeholder="Discount code">
+        <button class="btn outline small" onclick="applyDiscount()">Apply</button>
+      </div>
+      <div class="cart-total"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+      <div class="cart-total"><span>Discount</span><span id="cartDiscount">₹0</span></div>
+      <div class="cart-total"><span>Total</span><span id="cartTotal">₹0</span></div>
+      <button class="btn primary" onclick="cartWhatsApp()">Confirm on WhatsApp</button>
+      <button class="btn outline" onclick="clearCart()">Clear Cart</button>
+    </div>
+  </aside>
+
+  <script>window.SNS_BASE = "";</script>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
