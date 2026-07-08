@@ -1,41 +1,7 @@
-// Stir n Serve product database
-// Edit this file to change products, prices, sizes, payment links, FSSAI number and social links.
-
-window.SNS_CONFIG = {
-  brandName: "Stir n Serve",
-  tagline: "Crafted for Cravings",
-  phonePrimary: "8130275252",
-  phoneSecondary: "9314482717",
-  whatsappNumber: "918130275252",
-  address: "Food Destination",
-  fssaiLicense: "Add FSSAI License / Registration No.",
-  instagram: "#",
-  pinterest: "#",
-  facebook: "#",
-  youtube: "#",
-  discounts: {
-    WELCOME10: { type: "percent", value: 10, label: "Welcome 10% off" },
-    SNS5: { type: "percent", value: 5, label: "SNS 5% off" },
-    HAMPER10: { type: "percent", value: 10, label: "Hamper 10% off" }
-  },
-  homeReels: [
-    {
-      title: "Kitchen to Jar",
-      note: "Add a 15-30 sec making/packing reel here.",
-      url: "#"
-    },
-    {
-      title: "Tea-Time Crunch",
-      note: "Show Namak Para, Mathri and chai serving shots.",
-      url: "#"
-    },
-    {
-      title: "Hamper Reveal",
-      note: "Show festive hamper packing and final box shot.",
-      url: "#"
-    }
-  ]
-};
+// Stir n Serve products
+// Edit product names, prices, sizes, descriptions and product image BASE names here.
+// For images, do not include .jpg/.png. Example: image: "assets/product-images/namak-para".
+// The website will automatically try .png, .jpg, .jpeg and .webp.
 
 window.SNS_PRODUCTS = [
   {
@@ -49,7 +15,7 @@ window.SNS_PRODUCTS = [
     taste: "Crispy, savoury, light spice",
     bestWith: "Chai, coffee, travel snacks, office snacking",
     storage: "Store in a cool, dry place. Keep the jar tightly closed after opening.",
-    image: "assets/04-products/01-namak-para.jpg",
+    image: "assets/product-images/namak-para",
     sizes: [
       { label: "150 gm", wasPrice: 135, nowPrice: 115, paymentLink: "" },
       { label: "300 gm", wasPrice: 265, nowPrice: 210, paymentLink: "" }
@@ -66,7 +32,7 @@ window.SNS_PRODUCTS = [
     taste: "Mild, crispy, traditional",
     bestWith: "Chai, pickle, family snack plates",
     storage: "Store in a cool, dry place. Keep the jar tightly closed after opening.",
-    image: "assets/04-products/02-sada-mathri.jpg",
+    image: "assets/product-images/sada-mathri",
     sizes: [
       { label: "300 gm", wasPrice: 225, nowPrice: 210, paymentLink: "" }
     ]
@@ -82,7 +48,7 @@ window.SNS_PRODUCTS = [
     taste: "Crispy, methi, savoury, aromatic",
     bestWith: "Chai, travel, pickle, festive snack platters",
     storage: "Store in a cool, dry place. Keep the jar tightly closed after opening.",
-    image: "assets/04-products/03-methi-mathri.jpg",
+    image: "assets/product-images/methi-mathri",
     sizes: [
       { label: "200 gm", wasPrice: 195, nowPrice: 165, paymentLink: "" },
       { label: "400 gm", wasPrice: 375, nowPrice: 300, paymentLink: "" }
@@ -99,7 +65,7 @@ window.SNS_PRODUCTS = [
     taste: "Garlic, crispy, bold, savoury",
     bestWith: "Chai, get-togethers, travel, snack platters",
     storage: "Store in a cool, dry place. Keep the jar tightly closed after opening.",
-    image: "assets/04-products/04-lehsuni-bites.jpg",
+    image: "assets/product-images/lehsuni-bites",
     sizes: [
       { label: "200 gm", wasPrice: 225, nowPrice: 190, paymentLink: "" },
       { label: "400 gm", wasPrice: 435, nowPrice: 340, paymentLink: "" }
@@ -116,7 +82,7 @@ window.SNS_PRODUCTS = [
     taste: "Sweet, crunchy, festive",
     bestWith: "Tea, festive boxes, kids, gifting",
     storage: "Store in a cool, dry place. Keep the jar tightly closed after opening.",
-    image: "assets/04-products/05-sakar-para.jpg",
+    image: "assets/product-images/sakar-para",
     sizes: [
       { label: "200 gm", wasPrice: 195, nowPrice: 140, paymentLink: "" },
       { label: "400 gm", wasPrice: 375, nowPrice: 250, paymentLink: "" }
@@ -133,7 +99,7 @@ window.SNS_PRODUCTS = [
     taste: "Sweet, rich, nutty, festive",
     bestWith: "Festivals, gifting, celebrations, family desserts",
     storage: "Store in a cool, dry place. Keep box closed after opening.",
-    image: "assets/04-products/06-besan-kesar-ladoo.jpg",
+    image: "assets/product-images/besan-kesar-ladoo",
     sizes: [
       { label: "500 gm", wasPrice: 450, nowPrice: 425, paymentLink: "" }
     ]
@@ -149,7 +115,7 @@ window.SNS_PRODUCTS = [
     taste: "Sweet, rich, traditional, dry fruit",
     bestWith: "Festivals, gifting, family desserts",
     storage: "Store in a cool, dry place. Keep box closed after opening.",
-    image: "assets/04-products/07-atta-dryfruit-ladoo.jpg",
+    image: "assets/product-images/atta-dryfruit-ladoo",
     sizes: [
       { label: "500 gm", wasPrice: 495, nowPrice: 450, paymentLink: "" }
     ]
@@ -165,7 +131,7 @@ window.SNS_PRODUCTS = [
     taste: "Tangy, spicy, traditional",
     bestWith: "Paratha, dal chawal, poori, Indian thali",
     storage: "Use a dry spoon. Keep jar tightly closed and store in a cool, dry place.",
-    image: "assets/04-products/08-lehsuwa-ka-achar.jpg",
+    image: "assets/product-images/lehsuwa-ka-achar",
     sizes: [
       { label: "250 gm", wasPrice: 190, nowPrice: 190, paymentLink: "" },
       { label: "500 gm", wasPrice: 365, nowPrice: 365, paymentLink: "" }
@@ -182,7 +148,7 @@ window.SNS_PRODUCTS = [
     taste: "Tangy, spicy, Rajasthani, bold",
     bestWith: "Paratha, khichdi, dal chawal, travel meals",
     storage: "Use a dry spoon. Keep jar tightly closed and store in a cool, dry place.",
-    image: "assets/04-products/09-ker-ka-achar.png",
+    image: "assets/product-images/ker-ka-achar",
     sizes: [
       { label: "250 gm", wasPrice: 390, nowPrice: 390, paymentLink: "" },
       { label: "500 gm", wasPrice: 765, nowPrice: 720, paymentLink: "" }

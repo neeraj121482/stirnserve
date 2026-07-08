@@ -1,54 +1,14 @@
-# Stir n Serve Static Website V4
+# Stir n Serve V5 Auto-Edit Website
 
-This is a GitHub Pages static website for Stir n Serve.
+This version is designed so you usually edit only two files:
 
-## Upload to GitHub
+- `site-content.js` = website text, page hero image keys, contact details, social links, discount codes, reels.
+- `products.js` = product names, prices, sizes, descriptions, payment links and product image base names.
 
-Upload the contents of this folder to your repository root. The root should directly show:
+Images are automatic. Do not put file extensions in `site-content.js` or `products.js`. Upload PNG, JPG, JPEG or WEBP with the same base name and the site will try to use it.
 
-- `index.html`
-- `shop.html`
-- `products.js`
-- `style.css`
-- `script.js`
-- `assets/`
-- `products/`
+Example: product image base is `assets/product-images/ker-ka-achar`. You may upload `ker-ka-achar.png` or `ker-ka-achar.jpg`.
 
-Do not upload only the outer folder.
+## Important
 
-## How to edit images
-
-Open `IMAGE_INDEX.md`. Every image is numbered and mapped to the exact page/section it controls.
-
-## Main design fix in V4
-
-The page hero images are now full-width under the page title instead of small right-side image cards.
-
-## Product editing
-
-Edit `products.js` for:
-
-- product name
-- sizes
-- was price
-- now price
-- payment links
-- WhatsApp number
-- FSSAI number
-- social links
-
-## Product images
-
-Product images are in:
-
-`assets/04-products/`
-
-The product image paths are in `products.js`.
-
-## Page hero images
-
-Page hero images are in:
-
-`assets/03-page-heroes/`
-
-These are mapped in `IMAGE_INDEX.md`.
+`index.html` is the home page. It must stay named `index.html` for GitHub Pages.
