@@ -1,8 +1,8 @@
 // Stir n Serve website content and image map
-// Edit this file for page text, menu labels, contact info, social links, section text and page images.
-// Image paths are BASE NAMES without extension. You can upload .png, .jpg, .jpeg or .webp with the same base name.
-// Example: assets/page-images/shop-all-hero.png OR assets/page-images/shop-all-hero.jpg both work.
-// If both PNG and JPG exist with the same base name, PNG is used first.
+// Edit THIS file for page text, menu labels, contact info, social links, section text and page images.
+// Image paths are BASE NAMES without extension. Upload .png, .webp, .jpeg or .jpg with the same base name.
+// Example: assets/page-images/shop-all-hero.png OR shop-all-hero.jpg both work.
+// If more than one extension exists, the website tries them in this order: png, webp, jpeg, jpg.
 
 window.SNS_CONFIG = {
   brandName: "Stir n Serve",
@@ -16,9 +16,8 @@ window.SNS_CONFIG = {
   pinterest: "#",
   facebook: "#",
   youtube: "#",
-  // auto means images reload freshly and cache problems reduce.
   assetVersion: "auto",
-  imageExtensions: ["png", "jpg", "jpeg", "webp"],
+  imageExtensions: ["png", "webp", "jpeg", "jpg"],
   discounts: {
     WELCOME10: { type: "percent", value: 10, label: "Welcome 10% off" },
     SNS5: { type: "percent", value: 5, label: "SNS 5% off" },
@@ -35,21 +34,24 @@ window.SNS_SITE = {
   images: {
     logo: "assets/brand/sns-logo",
     favicon: "assets/brand/favicon",
+
     homeHero: "assets/page-images/home-hero",
-    homeCategorySavory: "assets/category-images/savory",
-    homeCategorySweets: "assets/category-images/sweets",
-    homeCategoryPickles: "assets/category-images/pickles",
-    homeCategoryHampers: "assets/category-images/hampers",
     shopAllHero: "assets/page-images/shop-all-hero",
-    savoryHero: "assets/page-images/savory-snacks-hero",
+    snacksHero: "assets/page-images/snacks-hero",
     sweetsHero: "assets/page-images/sweets-hero",
-    picklesHero: "assets/page-images/traditional-pickles-hero",
-    hampersHero: "assets/page-images/gift-hampers-hero",
+    picklesHero: "assets/page-images/pickles-hero",
+    giftHampersHero: "assets/page-images/gift-hampers-hero",
     storyHero: "assets/page-images/our-story-hero",
     promiseHero: "assets/page-images/our-promise-hero",
-    paymentHero: "assets/page-images/payment-and-orders-hero",
-    contactHero: "assets/page-images/contact-hero"
+    paymentHero: "assets/page-images/payment-orders-hero",
+    contactHero: "assets/page-images/contact-hero",
+
+    homeCategorySnacks: "assets/category-images/savory",
+    homeCategorySweets: "assets/category-images/sweets",
+    homeCategoryPickles: "assets/category-images/pickles",
+    homeCategoryHampers: "assets/category-images/hampers"
   },
+
   pages: {
     home: {
       file: "index.html",
@@ -63,6 +65,7 @@ window.SNS_SITE = {
       storyPara1: "Stir n Serve began with a simple belief — the best food is not just made, it is remembered.",
       storyPara2: "A rare mother-in-law and son-in-law partnership built on tradition, trust and authentic Indian taste."
     },
+
     shopAll: {
       file: "shop-all.html",
       navLabel: "Shop All",
@@ -72,19 +75,21 @@ window.SNS_SITE = {
       heroImage: "shopAllHero",
       sectionEyebrow: "All Products",
       sectionTitle: "Shop the full range",
-      sectionText: "Products are generated from products.js. Edit one file to change sizes, prices and product copy."
+      sectionText: "This page is generated from products.js. Edit one file to change product names, sizes, prices, copy and images."
     },
-    savory: {
-      file: "savory-snacks.html",
-      navLabel: "Savory",
+
+    snacks: {
+      file: "snacks.html",
+      navLabel: "Snacks",
       breadcrumb: "Savory Snacks",
       title: "Savory Snacks",
       subtitle: "Namak Para, Sada Mathri, Methi Mathri and Lehsuni Bites for chai, travel and everyday cravings.",
-      heroImage: "savoryHero",
-      sectionEyebrow: "Savory Range",
+      heroImage: "snacksHero",
+      sectionEyebrow: "Snack Range",
       sectionTitle: "Crunchy tea-time favourites",
-      sectionText: "All savory products are pulled from products.js using the category Savory."
+      sectionText: "All snack products are pulled from products.js using the category Savory."
     },
+
     sweets: {
       file: "sweets.html",
       navLabel: "Sweets",
@@ -96,10 +101,11 @@ window.SNS_SITE = {
       sectionTitle: "Festive and homemade sweets",
       sectionText: "All sweet products are pulled from products.js using the category Sweets."
     },
+
     pickles: {
-      file: "traditional-pickles.html",
+      file: "pickles.html",
       navLabel: "Pickles",
-      breadcrumb: "Traditional Pickles",
+      breadcrumb: "Pickles",
       title: "Traditional Pickles",
       subtitle: "Lehsuwa ka Achar and Ker ka Achar with bold Indian flavour.",
       heroImage: "picklesHero",
@@ -107,18 +113,20 @@ window.SNS_SITE = {
       sectionTitle: "Bold Indian achaar",
       sectionText: "All pickle products are pulled from products.js using the category Pickles."
     },
-    hampers: {
+
+    giftHampers: {
       file: "gift-hampers.html",
-      navLabel: "Hampers",
+      navLabel: "Gift Hampers",
       breadcrumb: "Gift Hampers",
       title: "Gift Hampers",
       subtitle: "Curated snack, sweet and pickle hampers for festivals, corporates, return gifts and family occasions.",
-      heroImage: "hampersHero",
+      heroImage: "giftHampersHero",
       sectionEyebrow: "Custom Hampers",
       sectionTitle: "For gifting, offices and events",
       sectionText: "Use this page for festive gifting, corporate hampers, return gifts and custom boxes."
     },
-    story: {
+
+    ourStory: {
       file: "our-story.html",
       navLabel: "Our Story",
       breadcrumb: "Our Story",
@@ -126,7 +134,8 @@ window.SNS_SITE = {
       subtitle: "A mother-in-law and son-in-law partnership built on taste, tradition and trust.",
       heroImage: "storyHero"
     },
-    promise: {
+
+    ourPromise: {
       file: "our-promise.html",
       navLabel: "Our Promise",
       breadcrumb: "Our Promise",
@@ -134,14 +143,16 @@ window.SNS_SITE = {
       subtitle: "Thoughtfully made food, rooted in trust, taste and tradition.",
       heroImage: "promiseHero"
     },
-    payment: {
-      file: "payment-and-orders.html",
-      navLabel: "Payment",
+
+    paymentOrders: {
+      file: "payment-orders.html",
+      navLabel: "Payment & Orders",
       breadcrumb: "Payment & Orders",
       title: "Payment & Orders",
       subtitle: "Use payment links for online payment on a static GitHub Pages website.",
       heroImage: "paymentHero"
     },
+
     contact: {
       file: "contact.html",
       navLabel: "Contact",

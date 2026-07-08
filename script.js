@@ -3,7 +3,7 @@
   const cfg = window.SNS_CONFIG || {};
   const site = window.SNS_SITE || { images:{}, pages:{} };
   const products = window.SNS_PRODUCTS || [];
-  let cart = JSON.parse(localStorage.getItem("snsCartV5") || "[]");
+  let cart = JSON.parse(localStorage.getItem("snsCartV6") || "[]");
   let discountCode = "";
 
   const rs = n => "₹" + Math.round(Number(n || 0)).toLocaleString("en-IN");
@@ -68,7 +68,7 @@
   window.openCart = () => { document.getElementById("cartDrawer")?.classList.add("open"); document.getElementById("overlay")?.classList.add("show"); renderCart(); };
   window.closeCart = () => { document.getElementById("cartDrawer")?.classList.remove("open"); document.getElementById("overlay")?.classList.remove("show"); };
   window.clearCart = () => { cart = []; saveCart(); renderCart(); };
-  function saveCart(){ localStorage.setItem("snsCartV5", JSON.stringify(cart)); updateCartCount(); }
+  function saveCart(){ localStorage.setItem("snsCartV6", JSON.stringify(cart)); updateCartCount(); }
   function updateCartCount(){ document.querySelectorAll("[data-cart-count]").forEach(el => el.textContent = cart.length); }
 
   window.addToCart = function(productId, sizeIndex=0){
