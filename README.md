@@ -1,64 +1,91 @@
-# Stir n Serve V6 Clean Auto-Edit Website
+# Stir n Serve V7 - clean editable text and images
 
-This is the clean version. There are no old duplicate folders such as `01-brand`, `02-home`, `03-page-heroes`, `04-products`, `pages`, `categories`, `videos.html`, or `fssai.html`.
+This version is meant to be easy to edit on GitHub Pages.
 
-## Upload to GitHub
+## Main rule
 
-Upload the contents of this folder directly to your repository root.
+Do not edit page text inside HTML for normal changes.
 
-The root should show:
+Edit:
 
-- `index.html`
-- `shop-all.html`
-- `snacks.html`
-- `sweets.html`
-- `pickles.html`
-- `gift-hampers.html`
-- `our-story.html`
-- `our-promise.html`
-- `payment-orders.html`
-- `contact.html`
-- `site-content.js`
-- `products.js`
-- `style.css`
-- `script.js`
-- `assets/`
-- `products/`
+- `site-content.js` for website/page text, story text, promise text, contact text, menu labels, phone numbers, FSSAI, social links and page hero image names.
+- `products.js` for product names, product descriptions, product images, sizes, prices, discount pricing and payment links.
 
-## Edit text
+## Page file map
 
-Change website page text in:
+- Home: `index.html`
+- Shop All: `shop-all.html`
+- Snacks: `snacks.html`
+- Sweets: `sweets.html`
+- Pickles: `pickles.html`
+- Gift Hampers: `gift-hampers.html`
+- Our Story: `our-story.html`
+- Our Promise: `our-promise.html`
+- Payment & Orders: `payment-orders.html`
+- Contact: `contact.html`
 
-`site-content.js`
+## Where to change page text
 
-Change product names, descriptions, prices, sizes, payment links and product image names in:
+Open `site-content.js` and find:
 
-`products.js`
+```js
+pages: {
+  ourStory: {
+    title: "Our Story",
+    subtitle: "...",
+    bodyTitle: "...",
+    paragraphs: [
+      "Paragraph 1",
+      "Paragraph 2"
+    ]
+  }
+}
+```
 
-## Edit images
+Change the text there, commit, and the page updates automatically.
 
-Do not edit HTML to change normal images. Replace the image file with the same base name.
+## Where to change product text/prices
 
-The website auto-detects image type in this order:
+Open `products.js`.
 
-1. `.png`
-2. `.webp`
-3. `.jpeg`
-4. `.jpg`
+Each product has:
 
-Example: for Ker ka Achar, the base name is:
+```js
+{
+  id: "ker-ka-achar",
+  name: "Ker ka Achar",
+  description: "...",
+  image: "assets/product-images/ker-ka-achar",
+  sizes: [
+    { label: "250 gm", wasPrice: 390, nowPrice: 390, paymentLink: "" }
+  ]
+}
+```
 
-`assets/product-images/ker-ka-achar`
+## Image system
 
-You can upload any one of these:
+Images are extension-flexible. If the code says:
+
+```js
+assets/product-images/ker-ka-achar
+```
+
+the website tries:
 
 - `ker-ka-achar.png`
 - `ker-ka-achar.webp`
 - `ker-ka-achar.jpeg`
 - `ker-ka-achar.jpg`
 
-If multiple versions exist, PNG is used first.
+So you can upload PNG or JPG using the same base name.
 
-## Important
+## Image folders
 
-If you upload this over an older messy version, first delete old folders/files in GitHub or they will remain visible in your repository. Recommended: delete all old files first, then upload this clean version.
+- Logo and favicon: `assets/brand/`
+- Page hero images: `assets/page-images/`
+- Homepage category card images: `assets/category-images/`
+- Product images: `assets/product-images/`
+
+## Full width issue fixed
+
+The page hero design is back to the normal earlier style: text on the left and image on the right.
