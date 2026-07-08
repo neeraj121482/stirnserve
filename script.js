@@ -6,7 +6,13 @@
   let discountCode = "";
 
   const rs = n => "₹" + Math.round(Number(n || 0)).toLocaleString("en-IN");
-  const asset = path => base + path;
+  const addVersion = path => {
+    if(!path) return path;
+    if(path.startsWith("http://") || path.startsWith("https://")) return path;
+    const v = cfg.cacheVersion || "20260708b";
+    return path.includes("?") ? `${path}&v=${v}` : `${path}?v=${v}`;
+  };
+  const asset = path => base + addVersion(path);
   const page = path => base + path;
   const productUrl = id => page("products/" + id + ".html");
   const firstSize = p => (p.sizes && p.sizes[0]) || { label:"", wasPrice:0, nowPrice:0 };

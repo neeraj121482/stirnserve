@@ -13,6 +13,7 @@ window.SNS_CONFIG = {
   pinterest: "#",
   facebook: "#",
   youtube: "#",
+  cacheVersion: "20260708b",
   discounts: {
     WELCOME10: { type: "percent", value: 10, label: "Welcome 10% off" },
     SNS5: { type: "percent", value: 5, label: "SNS 5% off" },
