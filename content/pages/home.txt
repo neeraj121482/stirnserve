@@ -1,0 +1,89 @@
+Nav Label:
+Home
+
+Title:
+Traditional Indian snacks, pickles & sweets <span>made to be remembered</span>
+
+Subtitle:
+Stir n Serve brings the warmth of home into jars, boxes and hampers — small-batch snacks, sweets and pickles built on trusted family recipes.
+
+Hero Image:
+homeHero
+
+SEO Title:
+Stir n Serve | Homemade Snacks, Sweets & Pickles
+
+SEO Description:
+Premium homemade Indian snacks, sweets, pickles and hampers by Stir n Serve.
+
+Buttons:
+Shop Products | shop-all.html | primary
+Order on WhatsApp | WhatsApp: Hi Stir n Serve, I want to place an order. Please share availability and delivery details. | secondary
+Our Story | our-story.html | outline
+
+Trust Pills:
+Santosh ji’s recipes
+Neeraj’s brand vision
+Food Destination
+Small batches
+
+Categories Title:
+Shop by craving
+
+Categories Text:
+Choose a category or browse the complete Stir n Serve range.
+
+Categories:
+Snacks | Namak Para, Sada Mathri, Methi Mathri and Lehsuni Bites. | categorySnacks | snacks.html | View Snacks
+Sweets | Sakar Para, Besan Kesar Ladoo and Atta Dryfruit Ladoo. | categorySweets | sweets.html | View Sweets
+Pickles | Lehsuwa ka Achar and Ker ka Achar. | categoryPickles | pickles.html | View Pickles
+Hampers | Festive, corporate, return gift and custom hampers. | categoryHampers | gift-hampers.html | Explore
+
+Favourites Eyebrow:
+Shop Favourites
+
+Favourites Title:
+Fresh from the Stir n Serve kitchen
+
+Favourites Text:
+Each product page has sizes, was/now pricing, auto discount percentage, WhatsApp order and payment-link support.
+
+Story Eyebrow:
+Our Story
+
+Story Title:
+Santosh ji brings the recipes. Neeraj brings the vision.
+
+Story Paragraphs:
+Stir n Serve began with a simple belief — the best food is not just made, it is remembered.
+
+A rare mother-in-law and son-in-law partnership built on tradition, trust and authentic Indian taste.
+
+Story Button:
+Read Our Story
+
+Hamper Eyebrow:
+Custom Hampers
+
+Hamper Title:
+Gift boxes made around your occasion
+
+Hamper Text:
+For festivals, corporates, return gifts, family functions and party orders.
+
+Hamper Button:
+Explore Hampers
+
+Reels Eyebrow:
+Videos & Reels
+
+Reels Title:
+Use short videos to make the food feel real
+
+Reels Text:
+Keep reels on the homepage only. Add Instagram, YouTube or local video links later.
+
+Reels:
+Kitchen to Jar | Add a 15-30 sec making or packing reel here. | #
+Tea-Time Crunch | Show Namak Para, Mathri and chai serving shots. | #
+Hamper Reveal | Show festive hamper packing and final box shot. | #

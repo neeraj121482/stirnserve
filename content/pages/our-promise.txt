@@ -1,0 +1,31 @@
+Nav Label:
+Our Promise
+
+Breadcrumb:
+Our Promise
+
+Title:
+Our Promise
+
+Subtitle:
+Thoughtfully made food, rooted in trust, taste and tradition.
+
+Hero Image:
+promiseHero
+
+Section Eyebrow:
+Quality Promise
+
+Section Title:
+What we stand for
+
+Section Text:
+Stir n Serve is built on a simple commitment — to create food that feels honest, familiar and worth sharing.
+
+Cards:
+Small Batch Preparation | We prepare in small batches to maintain freshness, consistency and attention to detail.
+Trusted Family Recipes | Our products come from recipes shaped over years of home cooking, family occasions and shared meals.
+Carefully Chosen Ingredients | We focus on ingredients that support taste, quality and a more authentic food experience.
+No Mass-Produced Feel | Our goal is not to create factory-like food. Our goal is to preserve the warmth of home-style preparation.
+Taste with Memory | Good food should bring back memories of festivals, tea-time, family visits and Indian kitchens.
+Food Safety | FSSAI License / Registration No: {fssai}

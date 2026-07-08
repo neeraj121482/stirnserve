@@ -1,91 +1,50 @@
-# Stir n Serve V7 - clean editable text and images
+# Stir n Serve Website
 
-This version is meant to be easy to edit on GitHub Pages.
+This is the normal-text-editable version.
 
-## Main rule
+## Edit normal website/page text
 
-Do not edit page text inside HTML for normal changes.
+Do not edit HTML for page text.
 
-Edit:
+Edit normal `.txt` files here:
 
-- `site-content.js` for website/page text, story text, promise text, contact text, menu labels, phone numbers, FSSAI, social links and page hero image names.
-- `products.js` for product names, product descriptions, product images, sizes, prices, discount pricing and payment links.
-
-## Page file map
-
-- Home: `index.html`
-- Shop All: `shop-all.html`
-- Snacks: `snacks.html`
-- Sweets: `sweets.html`
-- Pickles: `pickles.html`
-- Gift Hampers: `gift-hampers.html`
-- Our Story: `our-story.html`
-- Our Promise: `our-promise.html`
-- Payment & Orders: `payment-orders.html`
-- Contact: `contact.html`
-
-## Where to change page text
-
-Open `site-content.js` and find:
-
-```js
-pages: {
-  ourStory: {
-    title: "Our Story",
-    subtitle: "...",
-    bodyTitle: "...",
-    paragraphs: [
-      "Paragraph 1",
-      "Paragraph 2"
-    ]
-  }
-}
+```text
+content/pages/
 ```
 
-Change the text there, commit, and the page updates automatically.
+Examples:
 
-## Where to change product text/prices
-
-Open `products.js`.
-
-Each product has:
-
-```js
-{
-  id: "ker-ka-achar",
-  name: "Ker ka Achar",
-  description: "...",
-  image: "assets/product-images/ker-ka-achar",
-  sizes: [
-    { label: "250 gm", wasPrice: 390, nowPrice: 390, paymentLink: "" }
-  ]
-}
+```text
+content/pages/our-story.txt
+content/pages/our-promise.txt
+content/pages/contact.txt
 ```
 
-## Image system
+## Edit brand, phone, footer and social text
 
-Images are extension-flexible. If the code says:
-
-```js
-assets/product-images/ker-ka-achar
+```text
+content/global.txt
 ```
 
-the website tries:
+## Edit product data
 
-- `ker-ka-achar.png`
-- `ker-ka-achar.webp`
-- `ker-ka-achar.jpeg`
-- `ker-ka-achar.jpg`
+Product names, sizes, prices, discounts, ingredients and product image base names are in:
 
-So you can upload PNG or JPG using the same base name.
+```text
+products.js
+```
 
-## Image folders
+## Edit images
 
-- Logo and favicon: `assets/brand/`
-- Page hero images: `assets/page-images/`
-- Homepage category card images: `assets/category-images/`
-- Product images: `assets/product-images/`
+```text
+assets/brand/          logo and favicon
+assets/page-images/    page hero images
+assets/category-images/ homepage category images
+assets/product-images/ product images
+```
 
-## Full width issue fixed
+Images auto-detect `.png`, `.webp`, `.jpeg`, `.jpg`.
 
-The page hero design is back to the normal earlier style: text on the left and image on the right.
+## Important
+
+This text system works on GitHub Pages after upload. If you open the HTML directly from your computer, browser security may block `.txt` loading. Test it on GitHub Pages or with a local server.

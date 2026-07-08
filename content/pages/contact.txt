@@ -1,0 +1,37 @@
+Nav Label:
+Contact
+
+Breadcrumb:
+Contact
+
+Title:
+Contact
+
+Subtitle:
+Order, enquire or customise your Stir n Serve hamper.
+
+Hero Image:
+contactHero
+
+Section Eyebrow:
+Contact
+
+Section Title:
+Order, enquire or customise your hamper
+
+Section Text:
+Use WhatsApp for faster order confirmation, availability, delivery charges and payment details.
+
+Detail Title:
+Contact Details
+
+Details:
+WhatsApp / Orders: {phones}
+Address: {address}
+Best for: Homemade Snacks, Traditional Pickles, Gift Hampers, Corporate & Bulk Orders, Return Gifts and Party Bookings
+
+Form Title:
+Enquiry Form
+
+Form Button:
+Send Enquiry on WhatsApp

@@ -1,0 +1,28 @@
+Nav Label:
+Payment & Orders
+
+Breadcrumb:
+Payment & Orders
+
+Title:
+Payment & Orders
+
+Subtitle:
+Use payment links for online payment on a static GitHub Pages website.
+
+Hero Image:
+paymentHero
+
+Section Eyebrow:
+Ordering Setup
+
+Section Title:
+How online payment works here
+
+Section Text:
+GitHub Pages is static hosting, so online payments should be handled through safe external payment links.
+
+Cards:
+WhatsApp Ordering | Every product page and cart can send the order details directly to WhatsApp.
+Payment Links | Create Razorpay or other payment links for each size and paste them in products.js.
+No Secret Keys | Do not put payment gateway secret keys inside HTML, JavaScript or GitHub Pages.

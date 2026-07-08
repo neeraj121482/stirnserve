@@ -1,0 +1,74 @@
+Brand Name:
+Stir n Serve
+
+Tagline:
+Crafted for Cravings
+
+Phone Primary:
+8130275252
+
+Phone Secondary:
+9314482717
+
+WhatsApp Number:
+918130275252
+
+Address:
+Food Destination
+
+FSSAI License:
+Add FSSAI License / Registration No.
+
+Instagram:
+#
+
+Pinterest:
+#
+
+Facebook:
+#
+
+YouTube:
+#
+
+Topbar:
+Fresh homemade snacks, sweets & pickles — Call / WhatsApp: {phones}
+
+Cart Label:
+Cart
+
+WhatsApp Label:
+WhatsApp
+
+Footer Description:
+Homemade snacks, sweets, pickles and curated hampers.
+
+Footer Copyright:
+© Stir n Serve. Crafted for Cravings.
+
+Navigation:
+shopAll | Shop All
+snacks | Snacks
+sweets | Sweets
+pickles | Pickles
+giftHampers | Hampers
+ourStory | Our Story
+ourPromise | Our Promise
+contact | Contact
+
+Footer Columns:
+Shop | Shop All | shop-all.html
+Shop | Snacks | snacks.html
+Shop | Sweets | sweets.html
+Shop | Pickles | pickles.html
+Orders | Gift Hampers | gift-hampers.html
+Orders | Online Payment | payment-orders.html
+Orders | Bulk Orders | contact.html
+Orders | Contact | contact.html
+Brand | Our Story | our-story.html
+Brand | Our Promise | our-promise.html
+Brand | Corporate Gifting | gift-hampers.html
+Follow | Instagram | instagram
+Follow | Pinterest | pinterest
+Follow | Facebook | facebook
+Follow | YouTube | youtube

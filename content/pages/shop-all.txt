@@ -1,0 +1,23 @@
+Nav Label:
+Shop All
+
+Breadcrumb:
+Shop All
+
+Title:
+Shop All
+
+Subtitle:
+Homemade snacks, sweets and pickles with was/now pricing and WhatsApp ordering.
+
+Hero Image:
+shopAllHero
+
+Section Eyebrow:
+All Products
+
+Section Title:
+Shop the full range
+
+Section Text:
+This page is generated from products.js. Edit one file to change product names, sizes, prices, copy and images.

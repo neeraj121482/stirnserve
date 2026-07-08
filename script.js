@@ -15,7 +15,153 @@
   const extensions = cfg.imageExtensions || ["png", "webp", "jpeg", "jpg"];
   const cacheValue = cfg.assetVersion === "auto" ? String(Date.now()) : (cfg.assetVersion || "1");
   const currentPageKey = document.body.dataset.page || "home";
-  const currentPage = site.pages[currentPageKey] || site.pages.home || {};
+  let currentPage = site.pages[currentPageKey] || site.pages.home || {};
+
+
+
+  const plainTextPages = {
+    home: "home.txt",
+    shopAll: "shop-all.txt",
+    snacks: "snacks.txt",
+    sweets: "sweets.txt",
+    pickles: "pickles.txt",
+    giftHampers: "gift-hampers.txt",
+    ourStory: "our-story.txt",
+    ourPromise: "our-promise.txt",
+    paymentOrders: "payment-orders.txt",
+    contact: "contact.txt"
+  };
+
+  const knownTextKeys = new Set([
+    "Brand Name","Tagline","Phone Primary","Phone Secondary","WhatsApp Number","Address","FSSAI License","Instagram","Pinterest","Facebook","YouTube",
+    "Topbar","Cart Label","WhatsApp Label","Footer Description","Footer Copyright","Navigation","Footer Columns",
+    "Nav Label","Breadcrumb","Title","Subtitle","Hero Image","SEO Title","SEO Description","Buttons","Trust Pills","Categories Title","Categories Text","Categories",
+    "Favourites Eyebrow","Favourites Title","Favourites Text","Story Eyebrow","Story Title","Story Paragraphs","Story Button","Hamper Eyebrow","Hamper Title","Hamper Text","Hamper Button",
+    "Reels Eyebrow","Reels Title","Reels Text","Reels","Section Eyebrow","Section Title","Section Text","Cards","Body Title","Paragraphs","Detail Title","Details","Form Title","Form Button"
+  ]);
+
+  function keyToProp(key){
+    return String(key || "").trim().replace(/[^A-Za-z0-9 ]/g, "").split(/\s+/).filter(Boolean).map((part, index) => {
+      const lower = part.charAt(0).toLowerCase() + part.slice(1);
+      return index === 0 ? lower : part.charAt(0).toUpperCase() + part.slice(1);
+    }).join("");
+  }
+
+  function parseTextBlocks(text){
+    const out = {};
+    let currentKey = null;
+    let buffer = [];
+    function flush(){
+      if(!currentKey) return;
+      out[currentKey] = buffer.join("\n").trim();
+      buffer = [];
+    }
+    String(text || "").replace(/\r/g, "").split("\n").forEach(line => {
+      const m = line.match(/^([^:]{1,60}):\s*(.*)$/);
+      const possibleKey = m ? m[1].trim() : "";
+      if(m && knownTextKeys.has(possibleKey)){
+        flush();
+        currentKey = keyToProp(possibleKey);
+        buffer = [];
+        if(m[2]) buffer.push(m[2]);
+      } else if(currentKey){
+        buffer.push(line);
+      }
+    });
+    flush();
+    return out;
+  }
+
+  async function fetchTextFile(path){
+    try{
+      const res = await fetch(withCache(makeUrl(path)));
+      if(!res.ok) return "";
+      return await res.text();
+    }catch(e){
+      return "";
+    }
+  }
+
+  function textLines(value){
+    return String(value || "").split("\n").map(x => x.trim()).filter(Boolean).map(x => x.replace(/^[-*]\s*/, ""));
+  }
+
+  function textParagraphs(value){
+    const raw = String(value || "").trim();
+    if(!raw) return [];
+    const paras = raw.split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+    return paras.length > 1 ? paras : textLines(raw);
+  }
+
+  function parsePipeRows(value, fields){
+    return textLines(value).map(line => {
+      const parts = line.split("|").map(x => x.trim());
+      const obj = {};
+      fields.forEach((field, i) => obj[field] = parts[i] || "");
+      return obj;
+    });
+  }
+
+  function applyGlobalText(data){
+    if(data.brandName) cfg.brandName = data.brandName;
+    if(data.tagline) cfg.tagline = data.tagline;
+    if(data.phonePrimary) cfg.phonePrimary = data.phonePrimary;
+    if(data.phoneSecondary) cfg.phoneSecondary = data.phoneSecondary;
+    if(data.whatsAppNumber) cfg.whatsappNumber = data.whatsAppNumber;
+    if(data.address) cfg.address = data.address;
+    if(data.fssaiLicense) cfg.fssaiLicense = data.fssaiLicense;
+    ["instagram","pinterest","facebook","youtube"].forEach(k => { if(data[k]) cfg[k] = data[k]; });
+    if(data.topbar) site.global.topbar = data.topbar;
+    if(data.cartLabel) site.global.cartLabel = data.cartLabel;
+    if(data.whatsAppLabel) site.global.whatsappLabel = data.whatsAppLabel;
+    if(data.footerDescription) site.global.footerDescription = data.footerDescription;
+    if(data.footerCopyright) site.global.footerCopyright = data.footerCopyright;
+
+    if(data.navigation){
+      const nav = parsePipeRows(data.navigation, ["page","label"]);
+      if(nav.length) site.navigation = nav;
+    }
+
+    if(data.footerColumns){
+      const rows = parsePipeRows(data.footerColumns, ["title","label","url"]);
+      const columns = [];
+      rows.forEach(row => {
+        let col = columns.find(c => c.title === row.title);
+        if(!col){ col = { title: row.title, links: [] }; columns.push(col); }
+        if(["instagram","pinterest","facebook","youtube"].includes(row.url)) col.links.push({ label: row.label, urlKey: row.url });
+        else col.links.push({ label: row.label, url: row.url });
+      });
+      if(columns.length) site.global.footerColumns = columns;
+    }
+  }
+
+  function applyPageText(pageKey, data){
+    const p = site.pages[pageKey] || (site.pages[pageKey] = {});
+    const simple = ["navLabel","breadcrumb","title","subtitle","heroImage","seoTitle","seoDescription","categoriesTitle","categoriesText","favouritesEyebrow","favouritesTitle","favouritesText","storyEyebrow","storyTitle","storyButton","hamperEyebrow","hamperTitle","hamperText","hamperButton","reelsEyebrow","reelsTitle","reelsText","sectionEyebrow","sectionTitle","sectionText","bodyTitle","detailTitle","formTitle","formButton"];
+    simple.forEach(k => { if(data[k] !== undefined && data[k] !== "") p[k] = data[k]; });
+    if(data.buttons){
+      p.buttons = parsePipeRows(data.buttons, ["label","url","style"]).map(b => {
+        if(/^whatsapp\s*:/i.test(b.url)) return { label: b.label, whatsapp: b.url.replace(/^whatsapp\s*:/i, "").trim(), style: b.style };
+        return b;
+      });
+    }
+    if(data.trustPills) p.trustPills = textLines(data.trustPills);
+    if(data.categories) p.categories = parsePipeRows(data.categories, ["title","text","imageKey","url","button"]);
+    if(data.storyParagraphs) p.storyParagraphs = textParagraphs(data.storyParagraphs);
+    if(data.reels) p.reels = parsePipeRows(data.reels, ["title","text","url"]);
+    if(data.cards) p.cards = parsePipeRows(data.cards, ["title","text","button"]);
+    if(data.paragraphs) p.paragraphs = textParagraphs(data.paragraphs);
+    if(data.details) p.details = textLines(data.details);
+  }
+
+  async function loadPlainTextContent(){
+    applyGlobalText(parseTextBlocks(await fetchTextFile("content/global.txt")));
+    await Promise.all(Object.entries(plainTextPages).map(async ([pageKey, file]) => {
+      const text = await fetchTextFile("content/pages/" + file);
+      if(text) applyPageText(pageKey, parseTextBlocks(text));
+    }));
+    currentPage = site.pages[currentPageKey] || site.pages.home || {};
+  }
 
   function phones(){ return `${cfg.phonePrimary || ""} / ${cfg.phoneSecondary || ""}`; }
   function formatTokens(text){
@@ -282,7 +428,8 @@
   function revealNow(){ document.querySelectorAll('.reveal,.stagger').forEach(el => observer.observe(el)); }
   const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), { threshold:.12 });
 
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", async () => {
+    await loadPlainTextContent();
     renderNavigation(); renderFooter(); fillText(); renderPageSpecific(); resolveImages(); renderProductGrids(); renderProductDetail(); updateCartCount(); renderCart();
     document.querySelectorAll("[data-instagram]").forEach(a => a.href = cfg.instagram || "#");
     document.querySelectorAll("[data-pinterest]").forEach(a => a.href = cfg.pinterest || "#");

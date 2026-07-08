@@ -1,0 +1,23 @@
+Nav Label:
+Sweets
+
+Breadcrumb:
+Sweets
+
+Title:
+Sweets
+
+Subtitle:
+Sakar Para, Besan Kesar Ladoo and Atta Dryfruit Ladoo for gifting, festivals and family cravings.
+
+Hero Image:
+sweetsHero
+
+Section Eyebrow:
+Sweet Range
+
+Section Title:
+Festive and homemade sweets
+
+Section Text:
+All sweet products are pulled from products.js using the category Sweets.

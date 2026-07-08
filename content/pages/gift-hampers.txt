@@ -1,0 +1,29 @@
+Nav Label:
+Gift Hampers
+
+Breadcrumb:
+Gift Hampers
+
+Title:
+Gift Hampers
+
+Subtitle:
+Curated snack, sweet and pickle hampers for festivals, corporates, return gifts and family occasions.
+
+Hero Image:
+giftHampersHero
+
+Section Eyebrow:
+Custom Hampers
+
+Section Title:
+For gifting, offices and events
+
+Section Text:
+Use this page for festive gifting, corporate hampers, return gifts and custom boxes.
+
+Cards:
+Mini Hamper | Choose 3 products for small gifting, tasting and return gifts. | Enquire
+Family Hamper | Choose 5 products for family celebrations and festive sharing. | Enquire
+Premium Hamper | Choose 7 products with premium presentation and custom options. | Enquire
+Corporate Hamper | Custom quantity, budget and delivery planning for offices and bulk orders. | Discuss

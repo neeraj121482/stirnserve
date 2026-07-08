@@ -1,0 +1,23 @@
+Nav Label:
+Pickles
+
+Breadcrumb:
+Pickles
+
+Title:
+Traditional Pickles
+
+Subtitle:
+Lehsuwa ka Achar and Ker ka Achar with bold Indian flavour.
+
+Hero Image:
+picklesHero
+
+Section Eyebrow:
+Pickle Range
+
+Section Title:
+Bold Indian achaar
+
+Section Text:
+All pickle products are pulled from products.js using the category Pickles.

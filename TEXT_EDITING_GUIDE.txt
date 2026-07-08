@@ -1,0 +1,51 @@
+STIR N SERVE - NORMAL TEXT EDITING GUIDE
+
+You asked for page text to be editable as normal text, not HTML and not JavaScript.
+This version does that.
+
+EDIT PAGE TEXT HERE:
+content/pages/
+
+Each page has its own normal .txt file:
+
+content/pages/home.txt              = Home page text
+content/pages/shop-all.txt          = Shop All page text
+content/pages/snacks.txt            = Snacks page text
+content/pages/sweets.txt            = Sweets page text
+content/pages/pickles.txt           = Pickles page text
+content/pages/gift-hampers.txt      = Gift Hampers page text
+content/pages/our-story.txt         = Our Story page text
+content/pages/our-promise.txt       = Our Promise page text
+content/pages/payment-orders.txt    = Payment & Orders page text
+content/pages/contact.txt           = Contact page text
+
+EDIT BRAND / PHONE / FOOTER TEXT HERE:
+content/global.txt
+
+HOW TO EDIT:
+1. Open the relevant .txt file.
+2. Change the normal text under the heading.
+3. Commit the file on GitHub.
+4. Wait 1-3 minutes and hard refresh the website.
+
+EXAMPLE:
+To change Our Story page text, open:
+content/pages/our-story.txt
+
+Change text under:
+Title:
+Subtitle:
+Body Title:
+Paragraphs:
+
+Do not edit HTML for normal page text.
+
+PRODUCTS:
+Product names, sizes, prices, discount, product ingredients and product images are still in products.js because those are structured product data.
+
+IMAGES:
+Logo: assets/brand/sns-logo.png OR .jpg OR .webp
+Page images: assets/page-images/
+Product images: assets/product-images/
+
+The site automatically checks PNG, WEBP, JPEG and JPG.

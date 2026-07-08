@@ -1,0 +1,23 @@
+Nav Label:
+Snacks
+
+Breadcrumb:
+Snacks
+
+Title:
+Savory Snacks
+
+Subtitle:
+Namak Para, Sada Mathri, Methi Mathri and Lehsuni Bites for chai, travel and everyday cravings.
+
+Hero Image:
+snacksHero
+
+Section Eyebrow:
+Snack Range
+
+Section Title:
+Crunchy tea-time favourites
+
+Section Text:
+All snack products are pulled from products.js using the category Savory.
