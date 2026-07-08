@@ -182,7 +182,7 @@ window.SNS_PRODUCTS = [
     taste: "Tangy, spicy, Rajasthani, bold",
     bestWith: "Paratha, khichdi, dal chawal, travel meals",
     storage: "Use a dry spoon. Keep jar tightly closed and store in a cool, dry place.",
-    image: "assets/products/ker-ka-achar.jpg",
+    image: "assets/products/ker-ka-achar.png",
     sizes: [
       { label: "250 gm", wasPrice: 390, nowPrice: 390, paymentLink: "" },
       { label: "500 gm", wasPrice: 765, nowPrice: 720, paymentLink: "" }
